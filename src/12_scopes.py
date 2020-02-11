@@ -22,8 +22,8 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y
         y = 999
-        return y
 
     inner()
 
